@@ -17,13 +17,14 @@ class CoveredClass {
         }
     }
     
-    static func commaSeparated(from: Int, to: Int) -> String {
-        var result = ""
-        
-        for i in from..<to {
-            result += "\(i)"
+        static func commaSeparated(from: Int, to: Int) -> String {
+            var result = ""
+    
+            for i in from..<to {
+                result += "\(i),"
+            }
+            result += "\(to)"
+            return result
         }
-        result += "\(to)"
-        return result
-    }
+
 }
