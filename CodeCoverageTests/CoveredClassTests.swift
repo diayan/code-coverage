@@ -24,4 +24,10 @@ class CoveredClassTests: XCTestCase {
         
         XCTAssertEqual(result, "2,3,4")
     }
+    
+    func test_commaSeparated_from2to2_shouldReturn2WithNoComma() {
+        let result = CoveredClass.commaSeparated(from: 2, to: 2)
+        
+        XCTAssertEqual(result, "2")
+    }
 }
