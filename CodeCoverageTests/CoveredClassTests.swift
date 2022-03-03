@@ -1,14 +1,13 @@
 //
-//  CodeCoverageTests.swift
+//  CoveredClassTests.swift
 //  CodeCoverageTests
 //
 //  Created by diayan siat on 02/03/2022.
 //
 
 import XCTest
-@testable import CodeCoverage
 
-class CodeCoverageTests: XCTestCase {
+class CoveredClassTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
