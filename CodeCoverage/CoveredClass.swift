@@ -35,6 +35,9 @@ class CoveredClass {
     
     
     //MARK: Cover statements in sequence
+    //NOTE: If you can delete production code and the tests still pass then those lines aren't covered in the first place
+    //When you test a statement in a sequence of statements, the test touches the entire sequence and you may thing the rest of the statements
+    //are covered but they are not. 
     private(set) var area: Int
     
     var width: Int {
