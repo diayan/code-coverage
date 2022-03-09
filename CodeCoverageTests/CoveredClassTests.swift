@@ -36,4 +36,12 @@ class CoveredClassTests: XCTestCase {
         
         XCTAssertEqual(result, "2")
     }
+    
+    
+    //MARK: Cover statements in sequence
+    func test_area_withWidth7_ShouldBe49() {
+        let sut = CoveredClass()
+        sut.width = 7
+        XCTAssertEqual(sut.area, 49)
+    }
 }
