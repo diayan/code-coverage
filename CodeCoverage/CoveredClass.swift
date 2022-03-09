@@ -9,6 +9,7 @@ import Foundation
 
 class CoveredClass {
     
+    //MARK: Cover an if else statement 
     static func max(_ x: Int, _ y: Int) -> Int {
         if x < y {
             return y
@@ -17,14 +18,18 @@ class CoveredClass {
         }
     }
     
-        static func commaSeparated(from: Int, to: Int) -> String {
-            var result = ""
     
-            for i in from..<to {
-                result += "\(i),"
-            }
-            result += "\(to)"
-            return result
+    //MARK: Cover a loop
+    //Never a loop with one test. This misses an important boundary condition. What if the loop is never entered?
+    //It is important to see what happens if the statements inside are skipped
+    static func commaSeparated(from: Int, to: Int) -> String {
+        var result = ""
+        
+        for i in from..<to {
+            result += "\(i),"
         }
-
+        result += "\(to)"
+        return result
+    }
+    
 }
