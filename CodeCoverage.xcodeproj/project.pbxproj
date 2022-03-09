@@ -28,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B23F562F27D972DB00032948 /* NotesFile.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = NotesFile.md; sourceTree = "<group>"; };
 		B2B6A1CB27CF5B8900EBAD8C /* CodeCoverage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeCoverage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B6A1CE27CF5B8900EBAD8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2B6A1D027CF5B8900EBAD8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 				B2B6A1D727CF5B8B00EBAD8C /* Assets.xcassets */,
 				B2B6A1D927CF5B8B00EBAD8C /* LaunchScreen.storyboard */,
 				B2B6A1DC27CF5B8B00EBAD8C /* Info.plist */,
+				B23F562F27D972DB00032948 /* NotesFile.md */,
 			);
 			path = CodeCoverage;
 			sourceTree = "<group>";
