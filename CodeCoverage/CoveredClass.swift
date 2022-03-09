@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class CoveredClass {
     
@@ -32,4 +33,28 @@ class CoveredClass {
         return result
     }
     
+    
+    //MARK: Cover statements in sequence
+    private(set) var area: Int
+    
+    var width: Int {
+        didSet {
+            area = width * width
+            let color: UIColor = redOrGreen(for: width)
+            drawSquare(width: width, color: color)
+        }
+    }
+    
+    init(){
+        area = 0
+        width = 0
+    }
+    
+    private func redOrGreen(for width: Int) -> UIColor {
+        width % 2 == 0 ? .red : .green
+    }
+    
+    private func drawSquare(width: Int, color: UIColor) {
+        
+    }
 }
